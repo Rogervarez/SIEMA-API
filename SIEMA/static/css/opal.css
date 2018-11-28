@@ -111,7 +111,7 @@ a {
     color: rgb(77, 77, 77);
 }
 
-p a, .orange-link, .list-inline.lead li a { color: #f76c51; }
+p a, .orange-link, .list-inline.lead li a { color: #3943B7; }
 
 td.table-link-cell{
   position: relative
@@ -139,13 +139,13 @@ a.table-link:hover, a.table-link:active{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > li > a:hover{
-    background-color: #f76c51;
+    background-color: #3943B7;
     color: white;
 }
 
 .pagination > .active > a{
-    background-color: #f76c51;
-    border-color: #f76c51;
+    background-color: #3943B7;
+    border-color: #3943B7;
 }
 
 .pagination > li{
@@ -154,11 +154,11 @@ a.table-link:hover, a.table-link:active{
 .pagination > li > a:hover,
 .pagination > li > a:active
 .pagination > li > a:focus {
-    color: #f76447;
+    color: #3943B7;
 }
 
 .pagination > li > a{
-    color: #f76c51;
+    color: #3943B7;
     cursor: pointer;
 }
 
@@ -225,12 +225,12 @@ h1 small { color: #eff; }
 
 .panel.panel-primary .panel-heading a:hover{
     text-decoration: none;
-    color: #f76c51;
+    color: #3943B7;
 }
 
 .panel-primary .panel-default .panel-heading.bg-secondary,
 .bg-secondary {
-    background-color: #f76c51; /* red */
+    background-color: #3943B7; /* red */
     border-bottom: none;
     color: white;
 }
@@ -249,7 +249,7 @@ h1 small { color: #eff; }
     color: white;
     border-color: #9cc96b; /* Green */
     background-color: #5fa2dd; /* Blue */
-    background-color: #f76c51; /* red */
+    background-color: #3943B7; /* red */
     background-color: #9cc96b; /* Green */
 }
 
@@ -290,15 +290,15 @@ table.table > tbody > tr.diagnosis-table-issue > td{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
-    background-color: #f76447;
-    border-color: #f76c51;
+    background-color: #3943B7;
+    border-color: #3943B7;
     color: #fff
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: #f54928;
-    border-color: #f54f2f;
+    background-color: #3943B7;
+    border-color: #3943B7;
     color: #fff
 }
 
@@ -370,7 +370,7 @@ tr.selected, .spreadsheet-view.selected {
 .navbar-nav li:hover a,
 .navbar-nav li.active a,
 .navbar-nav li.active{
-	background: #f76c51;
+	background: #3943B7;
     color: white;
 }
 .navbar li {
@@ -417,7 +417,7 @@ i.delete,
 
 .panel-primary .panel-default .panel-heading,
 .panel-default .panel-heading {
-    border-bottom: 3px solid #f76c51;
+    border-bottom: 3px solid #3943B7;
     background-color: white;
     color: #333;
 }
@@ -533,13 +533,13 @@ i.delete,
 
 .nav-tabs.nav-justified li.active a,
 .nav-tabs.nav-justified li.active a:hover {
-    background-color: #f76c51; /* Red */
+    background-color: #3943B7; /* Red */
     color: white;
     border-bottom-width: 0px;
     padding-bottom: 11px
 }
 
-.patient-list-group { background-color:  #e7ebee; border-bottom: 2px solid #f76c51; margin-bottom: 3px; }
+.patient-list-group { background-color:  #e7ebee; border-bottom: 2px solid #3943B7; margin-bottom: 3px; }
 .patient-list-group ul { background-color:  #e7ebee; }
 .patient-list-group ul li { padding-top: 0px; padding-bottom: 0px; background-color: white; }
 
@@ -642,7 +642,7 @@ table { font-size: 12px; }
 }
 
 .edit_item:hover {
-    background-color: #f76c51; /* red */
+    background-color: #3943B7; /* red */
     color: white;
     cursor: pointer;
 }
@@ -746,7 +746,7 @@ table { font-size: 12px; }
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    background-color: #f76c51;
+    background-color: #3943B7;
     display: inline-block;
 }
 
@@ -813,7 +813,7 @@ svg.speech-bubble-timeline-container{
 .patient-timeline-seperator{
     margin-top: 4px;
     margin-bottom: 20px;
-    border-top: 1px dashed #f76c51;
+    border-top: 1px dashed #3943B7;
 }
 
 .patient-timeline > div{
@@ -1198,7 +1198,7 @@ a.table-link:hover{
 }
 
 .orange{
-  color: #f76c51
+  color: #3943B7
 }
 
 .small-icon, .list-group-item .btn i.small-icon{

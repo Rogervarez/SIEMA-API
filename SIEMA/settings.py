@@ -133,7 +133,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ES'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
@@ -245,8 +245,8 @@ DEFAULT_DOMAIN = 'http://SIEMA.com/'
 
 
 # ========== PROJECT ==========
-OPAL_BRAND_NAME = 'SIEMA'
-VERSION_NUMBER  = '<0.0.1'
+OPAL_BRAND_NAME = '-'
+VERSION_NUMBER  = '<1.0.1'
 
 # if you want sass, uncomment the below and gem install sass
 # COMPRESS_PRECOMPILERS = (
