@@ -1,0 +1,38 @@
+<div class="modal-header">
+  <h3>
+    <i class="glyphicon glyphicon-plus"></i>
+    Agregar Paciente
+  </h3>
+</div>
+
+<div class="modal-body">
+  <form class="form-horizontal">
+    <div class="form-group">
+	  <label class="control-label col-sm-3">Número de Hospital</label>
+	  <div class="col-sm-8">
+	    <input class="form-control"
+               ng-model="model.hospitalNumber"
+               ng-keypress="$event.keyCode == 13 && findByHospitalNumber()"
+               autofocus="true"
+               >
+	  </div>
+    </div>
+  </form>
+    <div ng-show="result && !result.demographics.length" >
+      <p class="lead text-center">
+        No se pudo encontrar este paciente, ¿quisieras agregar a un nuevo paciente?
+      </p>
+      <div class="text-center">
+        <button ng-click="newPatient()" class="btn btn-secondary">
+          <i class="fa fa-user"></i> Crear nuevo paciente
+        </button>
+      </div>
+    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-lg" one-click-only ng-click="findByHospitalNumber()">
+    <i class="fa fa-search"></i>
+    Buscar
+  </button>
+  <button class="btn btn-lg" ng-click="cancel()">Cancelar</button>
+</div>

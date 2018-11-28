@@ -1,0 +1,3 @@
+recursive-include SIEMA/static *
+recursive-include SIEMA/assets *
+recursive-include SIEMA/templates *
