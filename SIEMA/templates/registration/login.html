@@ -12,8 +12,8 @@
       <div class="panel panel-primary login">
         <div class="panel-heading">
           <h1>
-            <img src="{% if OPAL_LOGO_PATH %}{% static OPAL_LOGO_PATH %}{% else %}{% static 'img/ohc-trans.png' %}{% endif %}" />
-            {{OPAL_BRAND_NAME}}
+            <img src="{% if OPAL_LOGO_PATH %}{% static OPAL_LOGO_PATH %}{% else %}{% static 'img/ohc-trans.png' %}{% endif %}" style="float:none;"/>
+            <!-- {{OPAL_BRAND_NAME}} -->
           </h1>
         </div>
 
@@ -26,7 +26,7 @@
 	        {% csrf_token %}
 	        <div class="form-group">
 		      <div class="col-sm-12">
-                <input type="text" id="username" name="username"  placeholder="Username"
+                <input type="text" id="username" name="username"  placeholder="Usuario"
                        autocomplete="off"
                        class="form-control lg-text"
                        autofocus="autofocus"
@@ -36,7 +36,7 @@
 
             <div class="form-group">
 		      <div class="col-sm-12 lg-text">
-                <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="form-control">
 		      </div>
             </div>
 
