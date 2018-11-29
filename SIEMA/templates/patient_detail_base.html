@@ -5,9 +5,9 @@
     Patient not found
   </h1>
   <p class="lead text-center content-offset">
-    We're sorry but we couldn't find the patient you're looking for.
+    No se pudo encontrar al paciente que buscabas.
     <br />
-    Perhaps try searching for them instead?
+    Intenta con otra búsqueda.
   </p>
 </div>
 <div class="container-fluid content-offset {% block container_classes %}{% endblock %}"
@@ -31,19 +31,21 @@
     <div class="panel-body {% block panel_body_classes %}{% endblock %}">
       <div class="row">
         {% block content %}
-
-        <div class="col-md-3"> <!-- Episode Switcher -->
+         
+        <!-- Episode Switcher -->
+        <div class="col-md-3">
+         
           {% block pre_demographics %}{% endblock %}
           {% block demographics %}
             {% include 'partials/_demographics_panel.html' %}
           {% endblock %}
           {% block post_demographics %}{% endblock %}
           {% block episodes_switcher %}
-            <div class="panel panel-default">
+            <!-- <div class="panel panel-default">
               <div class="panel-heading ">
                 <h3>
                   <i class="fa fa-history"></i>
-                  Episodes
+                  Episodios
                 </h3>
               </div>
               <div class="list-group">
@@ -59,7 +61,7 @@
                   </span>
                 </a>
               </div>
-            </div>
+            </div> -->
           {% endblock episodes_switcher %}
 
           {% block views_switcher %}
@@ -68,7 +70,7 @@
               <div class="panel-heading ">
                 <h3>
                   <i class="fa fa-list-alt"></i>
-                  Views
+                  Vistas
                 </h3>
               </div>
               <div class="list-group">
@@ -86,7 +88,8 @@
             </div>
             {% endif %}
           {% endblock views_switcher %}
-        </div> <!-- End episode switcher -->
+        </div> 
+        <!-- End episode switcher -->
         <div class="col-md-9">
           <div class="col-md-12">
             {% for episode_category in episode_categories %}

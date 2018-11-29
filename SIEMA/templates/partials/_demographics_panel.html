@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3>
-      <i class="fa fa-user"></i> Demographics
+      <i class="fa fa-user"></i> Demográficos
       <i class="fa fa-pencil edit pull-right"
          ng-click="patient.recordEditor.editItem('demographics', 0)"></i>
     </h3>
@@ -9,7 +9,7 @@
   <div class="panel-body">
     <div class="row">
       <div class="col-md-4">
-        <b>Name</b>
+        <b>Nombre</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].first_name ]]
@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <b>Hosp. #</b>
+        <b>Hospital</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].hospital_number ]]
@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <b>NHS #</b>
+        <b># ID</b>
       </div>
       <div class="col-md-8">
         [[ episode.demographics[0].nhs_number ]]
@@ -34,7 +34,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <b>DOB</b>
+        <b>Fecha de nac.</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].date_of_birth | shortDate ]]
@@ -42,7 +42,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <b>Sex</b>
+        <b>Sexo</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].sex ]]
@@ -50,7 +50,7 @@
     </div>
     <div ng-show="patient.demographics[0].birth_place" class="row">
       <div class="col-md-4">
-        <b>Birth place</b>
+        <b>Lugar de nac.</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].birth_place ]]
@@ -58,7 +58,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <b>Ethnicity</b>
+        <b>Nacionalidad</b>
       </div>
       <div class="col-md-8">
         [[ patient.demographics[0].ethnicity ]]
