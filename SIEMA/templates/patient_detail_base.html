@@ -2,12 +2,12 @@
 {% load forms %}
 <div ng-show="patient == null" class="container-fluid content-offset">
   <h1 class="text-center content-offset">
-    Patient not found
+    ¡El paciente no ha sido encontrado!
   </h1>
   <p class="lead text-center content-offset">
-    We're sorry but we couldn't find the patient you're looking for.
+   Lo sentimos pero se puede encontrar al paciente que esta buscando.
     <br />
-    Perhaps try searching for them instead?
+    ¿Tal vez intente buscar en su lugar?
   </p>
 </div>
 <div class="container-fluid content-offset {% block container_classes %}{% endblock %}"
@@ -43,7 +43,7 @@
               <div class="panel-heading ">
                 <h3>
                   <i class="fa fa-history"></i>
-                  Episodes
+                  Episodios
                 </h3>
               </div>
               <div class="list-group">
@@ -68,7 +68,7 @@
               <div class="panel-heading ">
                 <h3>
                   <i class="fa fa-list-alt"></i>
-                  Views
+                  Vistas
                 </h3>
               </div>
               <div class="list-group">

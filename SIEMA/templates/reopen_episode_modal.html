@@ -1,12 +1,12 @@
       <div class="modal-header">
         <button type="button" class="close" ng-click="cancel()">×</button>
-        <h3>Archived episodes found</h3>
+        <h3>Se han encontrado episodios</h3>
       </div>
       <div class="modal-body">
         <p>[[ episodes.length ]] archived
-	      <span ng-show="episodes.length > 1">episodes were</span>
-	      <span ng-hide="episodes.length > 1">episode was</span>
-          found:</p>
+	      <span ng-show="episodes.length > 1">Lista de episodios</span>
+	      <span ng-hide="episodes.length > 1">episodio</span>
+          Se encontro:</p>
           <form>
 	        <label ng-repeat="episode in episodes" class="radio">
 		      <input type="radio" ng-model="model.episodeId" value="[[ episode.id ]]">
@@ -14,17 +14,17 @@
 		      <span ng-show="episode.date_of_admission">[[ episode.date_of_admission | shortDate ]]</span>
 		      -
 		      <span ng-show="episode.end">[[ episode.end | shortDate ]]</span>
-              <span ng-hide="episode.end">UNKNOWN</span>
+              <span ng-hide="episode.end">Desconocido</span>
 	        </label>
 	        <label class="radio">
 		      <input type="radio" ng-model="model.episodeId" value="None">
-		      Open new episode
+		      Crear un nuevo episodio
 	        </label>
           </form>
-          Select an episode to reopen it, or "Open new episode" to open a new episode.
+         Seleccione un episodio para volver a abrirlo, o "Crear un nuevo episodio" para crear un nuevo episodio.
       </div>
       <div class="modal-footer">
-        <button ng-show="model.episodeId == 'None'" class="btn btn-primary" ng-click="openNew()">Open new episode</button>
-        <button ng-hide="model.episodeId == 'None'" class="btn btn-primary" ng-click="reopen()">Reopen episode</button>
-        <button class="btn" ng-click="cancel()">Cancel</button>
+        <button ng-show="model.episodeId == 'None'" class="btn btn-primary" ng-click="openNew()">Crear un nuevo episodio</button>
+        <button ng-hide="model.episodeId == 'None'" class="btn btn-primary" ng-click="reopen()">Abrir un episodo</button>
+        <button class="btn" ng-click="cancel()">Cancelar</button>
       </div>
