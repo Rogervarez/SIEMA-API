@@ -15,8 +15,8 @@
 <ul>
 
 	<!-- testType == 'micro_test_mcs'" -->
-	<li ng-show="item.microscopy">Microscopy: [[item.microscopy]]</li>
-	<li ng-show="item.organism">Culture: [[item.organism]]</li>
+	<li ng-show="item.microscopy">Microscopio: [[item.microscopy]]</li>
+	<li ng-show="item.organism">Cultivo: [[item.organism]]</li>
 	<li ng-show="item.sensitive_antibiotics">SENS: [[item.sensitive_antibiotics]]</li>
 	<li ng-show="item.resistant_antibiotics">RES: [[item.resistant_antibiotics]]</li>
 
@@ -42,18 +42,18 @@
 	<li ng-show="item.tppa && item.tppa != 'pending'">TPPA: [[item.tppa | microresult]]</li>
 
 	<!-- testType == 'micro_test_viral_load'" -->
-	<li ng-show="item.viral_load">Viral load: [[item.viral_load]]</li>
+	<li ng-show="item.viral_load">Carga viral: [[item.viral_load]]</li>
 
 	<!-- testType == 'micro_test_parasitaemia'" -->
-	<li ng-show="item.parasitaemia">Parasitaemia: [[item.parasitaemia]]</li>
+	<li ng-show="item.parasitaemia">Parasitemia: [[item.parasitaemia]]</li>
 
 	<!-- testType == 'micro_test_swab_pcr'" -->
 	<li ng-show="item.hsv && item.hsv != 'pending'">HSV: [[item.hsv | microresult]]</li>
 	<li ng-show="item.syphilis && item.syphilis != 'pending'">Syphilis: [[item.syphilis | microresult]]</li>
 
 	<!-- testType == 'micro_test_c_difficile'" -->
-	<li ng-show="item.c_difficile_antigen && item.c_difficile_antigen != 'pending'">C. difficile antigen: [[item.c_difficile_antigen | microresult]]</li>
-	<li ng-show="item.c_difficile_toxin && item.c_difficile_toxin != 'pending'">C. difficile toxin: [[item.c_difficile_toxin | microresult]]</li>
+	<li ng-show="item.c_difficile_antigen && item.c_difficile_antigen != 'pending'">C. Antigeno dificil: [[item.c_difficile_antigen | microresult]]</li>
+	<li ng-show="item.c_difficile_toxin && item.c_difficile_toxin != 'pending'">C. Toxina dificil: [[item.c_difficile_toxin | microresult]]</li>
 
 	<!-- testType == 'micro_test_leishmaniasis_pcr'" -->
 	<li ng-show="item.species">Species: [[item.species]]</li>
