@@ -5,9 +5,15 @@
     ¡El paciente no ha sido encontrado!
   </h1>
   <p class="lead text-center content-offset">
+<<<<<<< HEAD
    Lo sentimos pero se puede encontrar al paciente que esta buscando.
     <br />
     ¿Tal vez intente buscar en su lugar?
+=======
+    No se pudo encontrar al paciente que buscabas.
+    <br />
+    Intenta con otra búsqueda.
+>>>>>>> 10345d0614232310fca1dde15a7ac1d95d74c908
   </p>
 </div>
 <div class="container-fluid content-offset {% block container_classes %}{% endblock %}"
@@ -31,15 +37,17 @@
     <div class="panel-body {% block panel_body_classes %}{% endblock %}">
       <div class="row">
         {% block content %}
-
-        <div class="col-md-3"> <!-- Episode Switcher -->
+         
+        <!-- Episode Switcher -->
+        <div class="col-md-3">
+         
           {% block pre_demographics %}{% endblock %}
           {% block demographics %}
             {% include 'partials/_demographics_panel.html' %}
           {% endblock %}
           {% block post_demographics %}{% endblock %}
           {% block episodes_switcher %}
-            <div class="panel panel-default">
+            <!-- <div class="panel panel-default">
               <div class="panel-heading ">
                 <h3>
                   <i class="fa fa-history"></i>
@@ -59,7 +67,7 @@
                   </span>
                 </a>
               </div>
-            </div>
+            </div> -->
           {% endblock episodes_switcher %}
 
           {% block views_switcher %}
@@ -86,7 +94,8 @@
             </div>
             {% endif %}
           {% endblock views_switcher %}
-        </div> <!-- End episode switcher -->
+        </div> 
+        <!-- End episode switcher -->
         <div class="col-md-9">
           <div class="col-md-12">
             {% for episode_category in episode_categories %}
