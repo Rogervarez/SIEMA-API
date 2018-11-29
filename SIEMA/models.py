@@ -19,13 +19,6 @@ class Investigation(models.Investigation): pass
 class SymptomComplex(models.SymptomComplex): pass
 class PatientConsultation(models.PatientConsultation): pass
 
-class TODOItem(models.EpisodeSubrecord):
-    job       = fields.CharField(max_length=200)
-    due_date  = fields.DateField(blank=True, null=True)
-    details   = fields.TextField(blank=True, null=True)
-    completed = fields.BooleanField(default=False)
-    pass 
-
 # we commonly need a referral route, ie how the patient
 # came to the service, but not always.
 # class ReferralRoute(models.ReferralRoute): pass
