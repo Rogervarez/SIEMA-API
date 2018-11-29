@@ -36,10 +36,10 @@
           {% if request.user.is_staff %}
           {% block stafftools %}
           <br>
-          <!-- <a href="/admin/opal/episode/[[ episode.id ]]/" target="_blank">
+          <a href="/admin/opal/episode/[[ episode.id ]]/" target="_blank">
             <i class="fa fa-cogs"></i>
             Admin.
-          </a> -->
+          </a>
           {% endblock stafftools %}
           {% endif %}
         </div>
@@ -53,7 +53,7 @@
               </a>
             </p>
           </li>
-          <!-- <li class="list-group-item" ng-show="profile.can_see_pid()">
+          <li class="list-group-item" ng-show="profile.can_see_pid()">
             <h4>
               <i class="fa fa-users"></i> Equipos
               {% if patient_list.allow_edit_teams %}
@@ -68,19 +68,19 @@
                >
               <a href="/#/list/[[ metadata.tags[tag].slug ]]" >[[ metadata.tags[tag].display_name ]]</a>
             </h4>
-          </li> -->
+          </li>
 
           {% block episode_actions %}
-          <!-- <li class="list-group-item">
+          <li class="list-group-item">
             {% include 'partials/_episode_actions.html' %}
-          </li> -->
+          </li>
           {% endblock episode_actions %}
 
         </ul>
         {% endblock sidebar %}
 
       </div>
-      <!-- <div class="panel panel-default screen-only hidden-sm"
+      <div class="panel panel-default screen-only hidden-sm"
            ng-hide="!profile.can_see_pid()"
            >
         <div class="panel-heading">
@@ -101,8 +101,7 @@
           </p>
         </div>
         {% endblock left_panel %}
-      </div>  -->
-      <!-- .panel .panel-default .screen-only .hidden-sm -->
+      </div> <!-- .panel .panel-default .screen-only .hidden-sm -->
     </div> <!-- ends Action Panels -->
 
     <div class="col-md-10"> <!-- Detail panels -->
@@ -215,11 +214,11 @@
       </div>
 
       {% block spreadsheet_list_footer %}
-      <!-- <footer class="text-center keyboard-shortcuts screen-only">
+      <footer class="text-center keyboard-shortcuts screen-only">
         <a class="pointer screen-only" ng-click="keyboard_shortcuts($event)">
           <i class="fa fa-keyboard-o"></i> Comandos de teclado disponibles
         </a>
-      </footer> -->
+      </footer>
       {% endblock spreadsheet_list_footer %}
 
       {% endblock content %}

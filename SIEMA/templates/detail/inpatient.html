@@ -1,5 +1,5 @@
 {% load panels %}
-<!-- <div class="col-md-12">
+<div class="col-md-12">
   <div class="panel panel-active">
     <div class="panel-heading text-center">
       <h3>
@@ -20,28 +20,28 @@
       </center>
     </div>
   </div>
-</div> -->
+</div>
 <div class="col-md-6"> <!-- Detail panels col 1 -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3>
-        <i class="fa fa-map-marker"></i> Ubicación
+        <i class="fa fa-map-marker"></i> Location
         <i class="fa fa-pencil edit pull-right"
            ng-click="episode.recordEditor.editItem('location', 0)"></i>
       </h3>
     </div>
     <div class="panel-body">
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-md-4">
           <b>Category</b>
         </div>
         <div class="col-md-8">
           [[ episode.category_name ]]
         </div>
-      </div> -->
+      </div>
       <div class="row" ng-show="episode.start">
         <div class="col-md-4">
-          <b>Admitido</b>
+          <b>Admitted</b>
         </div>
         <div class="col-md-8">
           [[ episode.start | shortDate ]]
@@ -49,7 +49,7 @@
       </div>
       <div class="row" ng-show="episode.end">
         <div class="col-md-4">
-          <b>Dado de alta</b>
+          <b>Discharged</b>
         </div>
         <div class="col-md-8">
           [[ episode.end | shortDate ]]
@@ -65,7 +65,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <b>Sala</b>
+          <b>Ward</b>
         </div>
         <div class="col-md-8">
           [[ episode.location[0].ward ]]
@@ -73,7 +73,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <b>Cama</b>
+          <b>Bed</b>
         </div>
         <div class="col-md-8">
           [[ episode.location[0].bed ]]
@@ -81,12 +81,12 @@
       </div>
     </div>
   </div>
-  <!-- {% teams_panel %} -->
-  <!-- {% record_panel models.Allergies noentries="No known allergies"%} -->
+  {% teams_panel %}
+  {% record_panel models.Allergies noentries="No known allergies"%}
   {% record_panel models.PastMedicalHistory %}
 </div>                 <!-- Ends Detail panels col 1 -->
 <div class="col-md-6"> <!-- Detail panels col 2 -->
   {% record_panel models.Diagnosis %}
   {% record_panel models.Treatment %}
-  <!-- {% record_panel models.Investigation %} -->
+  {% record_panel models.Investigation %}
 </div>                 <!-- Ends Detail panels col 2 -->
