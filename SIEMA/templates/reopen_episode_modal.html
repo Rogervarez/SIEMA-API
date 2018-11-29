@@ -4,8 +4,8 @@
       </div>
       <div class="modal-body">
         <p>[[ episodes.length ]] archived
-	      <span ng-show="episodes.length > 1">episodes were</span>
-	      <span ng-hide="episodes.length > 1">episode was</span>
+	      <span ng-show="episodes.length > 1">episodios fuero`n</span>
+	      <span ng-hide="episodes.length > 1">episodio fue</span>
           found:</p>
           <form>
 	        <label ng-repeat="episode in episodes" class="radio">
@@ -21,10 +21,10 @@
 		      Open new episode
 	        </label>
           </form>
-          Select an episode to reopen it, or "Open new episode" to open a new episode.
+          Selecciona un episodio para re abrirlo, o "Abrir nuevo episodio" para abrir uno nuevo.
       </div>
       <div class="modal-footer">
-        <button ng-show="model.episodeId == 'None'" class="btn btn-primary" ng-click="openNew()">Open new episode</button>
-        <button ng-hide="model.episodeId == 'None'" class="btn btn-primary" ng-click="reopen()">Reopen episode</button>
-        <button class="btn" ng-click="cancel()">Cancel</button>
+        <button ng-show="model.episodeId == 'None'" class="btn btn-primary" ng-click="openNew()">Abrir nuevo episodio</button>
+        <button ng-hide="model.episodeId == 'None'" class="btn btn-primary" ng-click="reopen()">Re abrir episodio</button>
+        <button class="btn" ng-click="cancel()">Cancelar</button>
       </div>
