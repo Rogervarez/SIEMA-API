@@ -1,6 +1,6 @@
 {% comment %}
-  if we're looking at a patient subrecord and the patient exists use the patient as the parent
-  otherwise use the episode as the parent
+  Si estamos ante un subregistro de pacientes y el paciente existe, utilice al paciente como padre.
+   De lo contrario usar el episodio como el padre
 {% endcomment %}
 {% if is_patient_subrecord %}
 <div ng-repeat="parent in [patient || episode]">

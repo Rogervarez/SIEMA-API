@@ -33,19 +33,19 @@
 
   <span ng-show="form">
     <button check-form="form" class="btn btn-primary" ng-click="form.$valid && save('save')">
-      <i class="fa fa-save"></i> Save
+      <i class="fa fa-save"></i> Guardar
     </button>
   </span>
   <span ng-hide="form">
     <button class="btn btn-primary" ng-click="save('save')">
-      <i class="fa fa-save"></i> Save
+      <i class="fa fa-save"></i> Guardar
     </button>
   </span>
 
 
   {% endblock %}
   {% block modal_cancel %}
-  <button class="btn" ng-click="cancel()">Cancel</button>
+  <button class="btn" ng-click="cancel()">Cancelar</button>
   {% endblock %}
   {% if column.get_modal_footer_template %}
     {% include column.get_modal_footer_template %}
