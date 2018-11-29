@@ -1,25 +1,23 @@
-{% extends 'static_page.html' %}
-{% block navbar %}{% endblock %}
-{% block content %}
+{% extends 'static_page.html' %} {% block navbar %}{% endblock %} {% block
+content %}
 <div class="container content-offset">
-
   <div class="panel panel-primary">
     <!-- Default panel contents -->
-    <div class="panel-heading">
-      <h2>Banned Passwords</h2>
-    </div>
+    <div class="panel-heading"><h2>Contraseñas prohibidas</h2></div>
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <p class="lead">
-              This list of 1000 common passwords are banned for this application.
-            </p>
-            <ul>
-              {% for b in banned %}
-              {{b}}&nbsp; &nbsp;
-              {% endfor %}
-            </ul>
-          </div>
+          <p class="lead">
+            Lista de 1000 contraseñas comunes están prohibidas para esta
+            aplicación.
+          </p>
+          <ul>
+            {% for b in banned %}
+            {{
+              b
+            }}&nbsp; &nbsp; {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
