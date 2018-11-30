@@ -2,19 +2,19 @@
   "duration": [
     {
       "synonyms": [], 
-      "name": "2 days \u2013\u00a02 weeks"
+      "name": "2 dias \u2013\u00a02 semanas"
+    },
+    {
+      "synonyms": [], 
+      "name": "2 semanas \u2013\u00a03 meses"
     }, 
     {
       "synonyms": [], 
-      "name": "2 weeks \u2013\u00a03 months"
+      "name": "< 2 dias"
     }, 
     {
       "synonyms": [], 
-      "name": "< 2 days"
-    }, 
-    {
-      "synonyms": [], 
-      "name": "> 3 months"
+      "name": "> 3 meses"
     }
   ]
 }

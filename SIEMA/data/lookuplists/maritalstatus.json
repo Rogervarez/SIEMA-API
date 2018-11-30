@@ -2,27 +2,27 @@
   "maritalstatus": [
     {
       "synonyms": [], 
-      "name": "Single"
+      "name": "Soltero"
     }, 
     {
       "synonyms": [], 
-      "name": "Married/Civil Partner"
+      "name": "Casado"
     }, 
     {
       "synonyms": [], 
-      "name": "Divorced/Civil Partnership dissolved"
+      "name": "Divorciado"
     }, 
     {
       "synonyms": [], 
-      "name": "Widow/Surviving Civil Partner"
+      "name": "Viudor"
     }, 
     {
       "synonyms": [], 
-      "name": "Separated"
+      "name": "Separado"
     }, 
     {
       "synonyms": [], 
-      "name": "Not Disclosed"
+      "name": "No especificado"
     }
   ]
 }
